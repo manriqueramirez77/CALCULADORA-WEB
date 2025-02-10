@@ -1,0 +1,79 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente utilizada para el texto */
+    display: flex; /* Usamos flexbox para centrar la calculadora */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura completa de la ventana del navegador */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+}
+
+/* Estilos para el contenedor de la calculadora */
+.calculator {
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Estilos para la pantalla de la calculadora */
+.calculator-screen {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 80px; /* Altura de la pantalla */
+    border: none; /* Sin borde */
+    background-color: #252525; /* Color de fondo de la pantalla */
+    color: white; /* Color del texto */
+    text-align: right; /* Alineación del texto a la derecha */
+    padding-right: 20px; /* Espaciado a la derecha */
+    padding-left: 10px; /* Espaciado a la izquierda */
+    font-size: 2.5rem; /* Tamaño de la fuente */
+}
+
+/* Estilos para el contenedor de los botones de la calculadora */
+.calculator-keys {
+    display: grid; /* Usamos grid para organizar los botones */
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los botones */
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+/* Estilos generales para los botones */
+button {
+    height: 60px; /* Altura de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    background-color: #e0e0e0; /* Color de fondo de los botones */
+    font-size: 1.5rem; /* Tamaño de la fuente en los botones */
+}
+
+/* Estilos específicos para los botones de operación */
+button.operator {
+    background-color: #ff9500; /* Color de fondo para los botones de operación */
+    color: white; /* Color del texto en los botones de operación */
+}
+
+/* Estilos para el botón de igual que ocupa dos columnas */
+button.equal-sign {
+    background-color: #ff9500; /* Color de fondo para el botón de igual */
+    grid-column: span 2; /* Hace que el botón ocupe dos columnas en el grid */
+}
+
+/* Estilos para el botón de limpiar todo */
+button.all-clear {
+    background-color: #ff3b30; /* Color de fondo para el botón de limpiar */
+    color: white; /* Color del texto en el botón de limpiar */
+}
+
+/* Efecto hover para todos los botones */
+button:hover {
+    background-color: #d4d4d2; /* Color de fondo al pasar el mouse */
+}
+
+/* Efecto hover específico para los botones de operación */
+button.operator:hover {
+    background-color: #ff8c00; /* Color de fondo al pasar el mouse sobre botones de operación */
+}
+
+/* Efecto hover específico para el botón de limpiar */
+button.all-clear:hover {
+    background-color: #ff2a1a; /* Color de fondo al pasar el mouse sobre el botón de limpiar */
+}
